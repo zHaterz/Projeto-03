@@ -11,7 +11,7 @@ def sms(*txt):
     message = client.messages.create(
         to="+5521983854412",
         from_="+16073604246",
-        body=(f"{txt}"))
+        body=(txt))
 
 def cole(*txt):
     for c in txt:
