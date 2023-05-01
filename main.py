@@ -5,37 +5,35 @@ Calc = Tk()
 
 # Funçoes
     
-class Calculadora:
-    def __init__(self):    
-        def soma(self,*num):
-            self.n = self.num
-            self.n+= self.n
-            # exibir["text"] = num
-            return self.n
-            
+def soma(self,*num):
+    self.n = self.num
+    self.n+= self.n
+    # exibir["text"] = num
+    return self.n
+    
 
-        def sub(self,*num):
-            self.n = self.num
-            for self.c in self.n:
-                self.c = self.c - self.n
-                return self.c
-            
+def sub(self,*num):
+    self.n = self.num
+    for self.c in self.n:
+        self.c = self.c - self.n
+        return self.c
+    
 
-        def mult(self,*num):
-            self.n = self.num
-            for self.c in self.n:
-                self.c = self.n * self.c
-                return self.c
+def mult(self,*num):
+    self.n = self.num
+    for self.c in self.n:
+        self.c = self.n * self.c
+        return self.c
 
 
-        def div(self,*num):
-            self.n = self.num
-            for self.c in self.n:
-                self.c = self.c // self.n
-                return self.c
+def div(self,*num):
+    self.n = self.num
+    for self.c in self.n:
+        self.c = self.c // self.n
+        return self.c
 
 
-a = Calculadora()
+
 
 #   Programa 
 Calc.title("Calculadora")
@@ -54,17 +52,17 @@ resul = Button(Calc, text="=")
 resul.grid(column=1, row=5)
 
 #Botoes Aritimeticos
-somas = Button(Calc, text="+", command= a.soma)
+somas = Button(Calc, text="+", command= soma)
 somas.grid(column=0, row=2,padx=5, pady=5)
 
-dive = Button(Calc, text="/", command= a.div)
+dive = Button(Calc, text="/", command= div)
 dive.grid(column=1,row=2, padx=0, pady=5)
 
-multi = Button(Calc, text="X", command= a.mult)
+multi = Button(Calc, text="X", command= mult)
 multi.grid(column=1, row=3, padx=5, pady=5)
 
 
-subr = Button(Calc, text="-", command= a.sub)
+subr = Button(Calc, text="-", command= sub)
 subr.grid(column=0, row=3,padx=5, pady=5)
 
 
