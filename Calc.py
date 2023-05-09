@@ -47,10 +47,10 @@ def multi():
     
 # Feito a calc, ainda precisa mudar grid() pelo place
           
-soma = Button(Calc, text="+", command= somar )
+soma = Button(Calc, text="+", command=somar )
 soma.place(x= "50", y="70" )
 
-divi = Button(Calc, text="  /", command= div)
+divi = Button(Calc, text="  /", command=div)
 divi.place(x="50", y="100")
 # divi.grid(column=0 , row=3)
 
